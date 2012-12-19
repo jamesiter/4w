@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="js/head.js"></script>
+<script type="text/javascript" src="js/push.js"></script>
+<title>Push Reader</title>
+<style type="text/css">
+	div#layout {
+		position:absolute;
+		left:100px;
+	}
+	div#rst_when {
+		float:left;
+	}
+	div#rst_who {
+		float:left;
+	}
+	div#rst_where {
+		float:left;
+	}
+	div#rst_do_what {float:left}
+</style>
+</head>
+<body>
+<div id="layout">
+    <div id="rst_when">
+    <input id="msg_when" value="星期天的晚上"/>
+    <input id="smt_when" type="submit" onclick="pushmsg('when','msg_when')" />
+    </div>
+    <div id="rst_who">
+    <input id="msg_who" value="XX"/>
+    <input id="smt_who" type="submit" onclick="pushmsg('who','msg_who')" />
+    </div>
+    <div id="rst_where">
+    <input id="msg_where" value="那"/>
+    <input id="smt_where" type="submit" onclick="pushmsg('where','msg_where')" />
+    </div>
+    <div id="rst_do_what">
+    <input id="msg_do_what" value="干"/>
+    <input id="smt_do_what" type="submit" onclick="pushmsg('do_what','msg_do_what')" />
+    </div>
+</div>
+</body>
+</html>
